@@ -18,7 +18,7 @@ TARGET_NEEDS_DTBOIMAGE := true
 
 # Manifests
 DEVICE_MANIFEST_FILE += device/google/crosshatch/lineage_manifest.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/lineage/config/device_framework_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/derp/config/device_framework_matrix.xml
 
 # Partitions
 AB_OTA_PARTITIONS += \
@@ -30,7 +30,7 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # Reserve space for gapps install
 BOARD_PRODUCTIMAGE_MINIMAL_PARTITION_RESERVED_SIZE := true
--include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/derp/config/BoardConfigReservedSize.mk
 
 # SELinux
 BOARD_SEPOLICY_DIRS += device/google/crosshatch/sepolicy-lineage/dynamic

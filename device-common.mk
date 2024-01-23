@@ -14,6 +14,13 @@
 # limitations under the License.
 #
 
+#DERP_BUILDTYPE=Official
+DERP_VERSION_APPEND_TIME_OF_DAY=true
+
+# Remove packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 TARGET_USERIMAGES_USE_F2FS := true
 
 LOCAL_PATH := device/google/crosshatch
@@ -117,7 +124,7 @@ PRODUCT_PACKAGES += \
 # Enable retrofit dynamic partitions for all blueline
 # and crosshatch targets
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
-PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
+PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := false
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl.recovery \
     bootctrl.sdm845 \
